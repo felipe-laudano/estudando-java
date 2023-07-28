@@ -1,4 +1,4 @@
-/*
+package aula_260723;/*
 *Um programa Java, de ter um nome bem definido. Seguindo o PascalCase:
 *
 * BatataAssada
