@@ -43,9 +43,6 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "{" + nome +
-                ", " + idade +
-                ", " + cpf +
-                "}";
+        return "nome: " + nome + " idade:" + idade + " cpf:" + cpf;
     }
 }

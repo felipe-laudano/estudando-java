@@ -62,9 +62,6 @@ public class Conta {
 
     @Override
     public String toString() {
-        return "{" + numero +
-                ", " + saldo +
-                ", " + cliente +
-                '}';
+        return "numero: " + numero + " saldo: " + saldo + " cliente:" + cliente;
     }
 }
