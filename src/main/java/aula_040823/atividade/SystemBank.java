@@ -5,17 +5,32 @@ public class SystemBank {
     public static void main(String[] args) {
         Banco itau = new Banco();
 
-        Cliente Felipe = new Cliente("Felipe", 21, "405.342.598-65");
+        Cliente Jose = new Cliente("Jose", 21, "405.342.598-65");
         Cliente Renato = new Cliente("Renato", 14, "401.342.598-61");
         Cliente Maria = new Cliente("Maria", 40, "422.342.598-62");
 
-        itau.criarConta(Felipe);
+        //toString da classe Cliente, ele fica oculto
+//        System.out.println(Jose);
+
+        //Criando contas através do método criarConta da classe Banco
+        itau.criarConta(Jose);
         itau.criarConta(Renato);
         itau.criarConta(Maria);
 
-        itau.buscarConta(3).depositar(15000.0);
-        itau.buscarConta(3).sacar(250.0);
+        //Localizando a conta pelo número e depois usando o toString da classe Conta, ele fica oculto
+//        System.out.println(itau.buscarConta(1));
 
-        itau.listarContas();
+        //Utilizando o método buscarConta para encontrar uma conta e depositar 15.000 nela
+        itau.buscarConta(1).depositar(15000.0);
+        itau.buscarConta(1).sacar(250.0);
+        //imprimindo conta novamente para ver alterações
+//        System.out.println(itau.buscarConta(1));
+//
+//        //listar todas as contas do banco itau
+//        itau.listarContas();
+//
+//        //toString da classe Banco
+        System.out.println(itau);
+
     }
 }
