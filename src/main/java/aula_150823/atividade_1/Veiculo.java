@@ -1,6 +1,8 @@
 package aula_150823.atividade_1;
 
 import java.time.Year;
+//Crie uma classe Veiculo com propriedades como marca, modelo e ano.
+// Em seguida, crie subclasses como Carro e Moto que herdam de Veiculo.
 
 public class Veiculo {
     private String marca;

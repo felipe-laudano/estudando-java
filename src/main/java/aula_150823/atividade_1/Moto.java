@@ -4,13 +4,15 @@ import java.time.Year;
 
 public class Moto extends Veiculo {
     private String categoria;
+    private Float volumeBagageiro;
 
     public Moto() {
     }
 
-    public Moto(String marca, String modelo, Year ano, String categoria) {
+    public Moto(String marca, String modelo, Year ano, String categoria, Float volumeBagageiro) {
         super(marca, modelo, ano);
         this.categoria = categoria;
+        this.volumeBagageiro = volumeBagageiro;
     }
 
     public String getCategoria() {
